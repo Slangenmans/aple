@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: rgb(0, 140, 255);
+}
+
+/* Navigation bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  min-height: 40px;
+  width: 100%;
+  background: black;
+  color: rgb(209, 209, 209);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 1rem 0 1rem;
+}
+
+nav ul li {
+  flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    flex: 1;
+  }
+}
+
+/* Grey advert bar */
+.advert-top {
+  margin-top: 40px;
+  min-height: 40px;
+  width: 100%;
+  background: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.advert-top p {
+  /* waarom krijg ik dit niet normaal vertikaal gecentreerd!? */
+  text-align: center;
+  margin: auto;
+  padding-top: 0.4rem;
+}
+
+/* Header */
+.content-top {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-top * {
+  margin: 0.2rem;
+}
+
+.content-top h1 {
+  /* Meerdere header selectors tegelijk pakken werkte niet!? */
+  margin: 4rem 0 0 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.content-top h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.content-top p {
+  color: grey;
+}
+
+.content-top a {
+  text-decoration: none;
+}
+
+.content-top img {
+  display: block;
+  max-width: 100%;
+  margin: 0.4rem auto;
+  flex: 1;
+  /* box-shadow: inset 500px 0 white; */
+}
+
+/* Generic verticle content */
+.vert-content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vert-content * {
+  margin: 0.2rem;
+}
+
+.vert-content h1 {
+  /* Meerdere header selectors tegelijk pakken werkte niet!? */
+  margin: 0.4rem 0 0 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.vert-content h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.vert-content p {
+  color: grey;
+}
+
+.vert-content a {
+  text-decoration: none;
+}
+
+.vert-content img {
+  display: block;
+  max-width: 100%;
+  margin: 0.4rem auto;
+  flex: 1;
+  /* box-shadow: inset 500px 0 white; */
+}
+
+/* Exception verticle content */
+.content-chips {
+  background: black;
+}
+
+.content-chips h1 {
+  color: white;
+}
+
+.content-chips h3 {
+  color: white;
+}
+
+/* Horizontal content */
+.content-row1,
+.content-row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-row1 > *,
+.content-row2 > * {
+  margin: 1rem;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  color: rgb(124, 124, 124);
+}
+
+.disclaimer {
+  margin: auto;
+  max-width: 75%;
+  font-size: 8px;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px grey solid;
+}
+
+.refferences {
+  font-size: 12px;
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.misc-list {
+  flex: 1;
+}
+
+.misc-list ul {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
